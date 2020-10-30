@@ -1,0 +1,9 @@
+set lmargin 10
+set yrange [96:100]
+set xlabel "Generations"
+set ylabel "Correct classifications on test set"
+set out "hit.eps"
+set terminal postscript eps
+set size square 0.5,0.5
+set nokey
+plot "run.data" u 1 w l
